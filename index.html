@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS TEST - Food Ordering System</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<style>
+    h1 {
+    width: 800px;
+    margin: 0 auto;
+    color: #c7daf2(255, 255, 255);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+	background-color: #db5a42;
+    text-align: center;
+    text-size-adjust: 100px;
+    }
+    #forcheckboxes {
+    width: 800px;
+    margin: 0 auto;
+    color: #a57f60(255, 255, 255);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+	background-color: #e8ae68;
+    text-align: center;
+    text-size-adjust: 100px;
+    }
+    #forinput {
+    width: 800px;
+    margin: 0 auto;
+    color: #a57f60(255, 255, 255);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+	background-color: #FFD275;
+    text-align: center;
+    text-size-adjust: 100px;
+    }
+    body {
+        color: #a57f60;
+        font-family: American Typewriter;
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220627/pngtree-fluffy-like-cotton-candy-blue-sky-cloud-natural-cloudscape-photo-image_13987308.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+</style>
+<body>
+<pre type="text" id="strings"></pre>
+<h1 style="color: white;"> FOOD ORDERS </h1> <br/> <br/> <br/> <br/>
+<div id="forcheckboxes">
+<h3><b> MENU:</b></h3> <br/>
+    <input type="checkbox" name="food" value="Leche Flan"> Leche Flan - ₱80 <br/>
+    <input type="checkbox" name="food" value="Halo-Halo"> Halo-Halo - ₱50 <br/>
+    <input type="checkbox" name="food" value="Matcha Scramble"> Matcha Scramble - ₱30 <br/>
+    <input type="checkbox" name="food" value="Banana Milkshake"> Banana Milkshake - ₱100 <br/>
+    <input type="checkbox" name="food" value="Mango Milkshake"> Mango Milksgake - ₱100 <br/> <br/>
+</div> <br/> <br/>
+<div id="forinput">
+<h3><b> CUSTOMER DETAILS: </b></h3>
+    <label> Full Name: </label> <br/>
+    <input type="text" id="input1" placeholder="Input details..."> <br/><br/>
+    <label> Address: </label> <br/>
+    <input type="text" id="input2" placeholder="Input details..."><br/><br/>
+    <label> Contact Number: </label> <br/>
+    <input type="number" id="input3" placeholder="Input details..."> <br/><br/><br/>
+
+   <button py-click="generate_message">Create Order Details</button>
+<br/> <br/>
+
+    <div id="output1"></div>
+</div> <br/> <br/> <br/> <br/>
+    <script type="py" src="main.py">  
+    </script>
+    <script type="py" src="main.py">  
+    </script>
+       <!--photo used for the background was taken from PNGtree-->
+</body>
+</html>
